@@ -4457,7 +4457,7 @@ abstract class elFinderVolumeDriver {
 	 * @author Troex Nevelin
 	 **/
 	protected function imgRotate($path, $degree, $bgcolor = '#ffffff', $destformat = null, $jpgQuality = null) {
-		debug($path, $degree);
+		$this->debug($path, $degree);
 		if (($s = @getimagesize($path)) == false || $degree % 360 === 0) {
 			return false;
 		}
